@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DIUXA Tech Hub | Progress</title>
+
+    <link rel="stylesheet" href="css/progress.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= MOBILE HEADER ================= -->
+
+    <header class="mobile-header">
+
+        <div class="logo">
+
+            <img src="images/logo-blue.png" alt="DIUXA Logo">
+
+            <h2>DIUXA</h2>
+
+        </div>
+
+        <button class="menu-btn">
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+    </header>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo-box">
+
+            <img src="images/logo.png" alt="DIUXA Logo">
+
+            <h2>DIUXA</h2>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+
+                <i class="fas fa-house"></i>
+
+                Home
+
+            </a>
+
+            <a href="classes.html">
+
+                <i class="fas fa-book-open"></i>
+
+                Classes
+
+            </a>
+
+            <a href="resources.html">
+
+                <i class="fas fa-folder-open"></i>
+
+                Resources
+
+            </a>
+
+            <a href="progress.html" class="active">
+
+                <i class="fas fa-chart-line"></i>
+
+                Progress
+
+            </a>
+
+            <a href="profile.html">
+
+                <i class="fas fa-user"></i>
+
+                Profile
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= PAGE HEADER ================= -->
+
+        <section class="page-header">
+
+            <div>
+
+                <h1>
+
+                    Learning Progress
+
+                </h1>
+
+                <p>
+
+                    Track your journey through the DIUXA Tech Hub Web Development Course and monitor your achievements.
+
+                </p>
+
+            </div>
+
+            <button class="continue-btn">
+
+                <i class="fas fa-play"></i>
+
+                Continue Learning
+
+            </button>
+
+        </section>
+
+        <!-- ================= OVERALL PROGRESS ================= -->
+
+        <section class="overall-progress">
+
+            <div class="progress-card">
+
+                <div class="progress-circle">
+
+                    <span id="progressPercent">
+
+                        0%
+
+                    </span>
+
+                </div>
+
+                <div class="progress-details">
+
+                    <h2>
+
+                        Course Completion
+
+                    </h2>
+
+                    <p>
+
+                        You have completed <strong>0</strong> out of <strong>44 Lessons</strong>.
+
+                    </p>
+
+                    <div class="progress-bar">
+
+                        <div class="progress-fill"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fas fa-book-open"></i>
+
+                <h2>
+
+                    44
+
+                </h2>
+
+                <p>
+
+                    Total Lessons
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fas fa-circle-check"></i>
+
+                <h2 id="completedLessons">
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Completed
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fas fa-hourglass-half"></i>
+
+                <h2 id="remainingLessons">
+
+                    44
+
+                </h2>
+
+                <p>
+
+                    Remaining
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fas fa-clock"></i>
+
+                <h2>
+
+                    0 hrs
+
+                </h2>
+
+                <p>
+
+                    Study Time
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fas fa-fire"></i>
+
+                <h2>
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Day Streak
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fas fa-trophy"></i>
+
+                <h2>
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Achievements
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ================= LEARNING GOAL ================= -->
+
+        <section class="goal-card">
+
+            <div class="goal-text">
+
+                <h2>
+
+                    Weekly Learning Goal
+
+                </h2>
+
+                <p>
+
+                    Complete at least <strong>5 lessons</strong> this week to stay on track.
+
+                </p>
+
+            </div>
+
+            <div class="goal-progress">
+
+                <h3>
+
+                    0 / 5 Lessons
+
+                </h3>
+
+                <div class="goal-bar">
+
+                    <div class="goal-fill"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CERTIFICATE ================= -->
+
+        <section class="certificate-card">
+
+            <div>
+
+                <i class="fas fa-award"></i>
+
+            </div>
+
+            <div>
+
+                <h2>
+
+                    Course Certificate
+
+                </h2>
+
+                <p>
+
+                    Finish all 44 lessons and complete every assignment to unlock your DIUXA Tech Hub Certificate.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Continue with Part 2 -->
+
+                <!-- ================= WEEKLY PROGRESS ================= -->
+
+        <section class="weekly-progress">
+
+            <h2>
+
+                Weekly Learning Progress
+
+            </h2>
+
+            <div class="chart-container">
+
+                <div class="chart">
+
+                    <div class="bar" style="height:35%;">
+
+                        <span>Mon</span>
+
+                    </div>
+
+                    <div class="bar" style="height:60%;">
+
+                        <span>Tue</span>
+
+                    </div>
+
+                    <div class="bar" style="height:45%;">
+
+                        <span>Wed</span>
+
+                    </div>
+
+                    <div class="bar" style="height:80%;">
+
+                        <span>Thu</span>
+
+                    </div>
+
+                    <div class="bar" style="height:55%;">
+
+                        <span>Fri</span>
+
+                    </div>
+
+                    <div class="bar" style="height:95%;">
+
+                        <span>Sat</span>
+
+                    </div>
+
+                    <div class="bar" style="height:70%;">
+
+                        <span>Sun</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= ACHIEVEMENTS ================= -->
+
+        <section class="achievements">
+
+            <h2>
+
+                Achievement Badges
+
+            </h2>
+
+            <div class="badge-grid">
+
+                <div class="badge-card">
+
+                    <i class="fas fa-star"></i>
+
+                    <h3>
+
+                        First Lesson
+
+                    </h3>
+
+                    <p>
+
+                        Complete your first lesson.
+
+                    </p>
+
+                </div>
+
+                <div class="badge-card">
+
+                    <i class="fas fa-fire"></i>
+
+                    <h3>
+
+                        7-Day Streak
+
+                    </h3>
+
+                    <p>
+
+                        Learn for seven consecutive days.
+
+                    </p>
+
+                </div>
+
+                <div class="badge-card">
+
+                    <i class="fas fa-laptop-code"></i>
+
+                    <h3>
+
+                        First Project
+
+                    </h3>
+
+                    <p>
+
+                        Submit your first project.
+
+                    </p>
+
+                </div>
+
+                <div class="badge-card">
+
+                    <i class="fas fa-graduation-cap"></i>
+
+                    <h3>
+
+                        Graduate
+
+                    </h3>
+
+                    <p>
+
+                        Complete all 44 lessons.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= RECENT ACTIVITY ================= -->
+
+        <section class="recent-activity">
+
+            <h2>
+
+                Recent Activity
+
+            </h2>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+
+                    <i class="fas fa-circle-check"></i>
+
+                    <div>
+
+                        <h3>
+
+                            Lesson 1 Completed
+
+                        </h3>
+
+                        <p>
+
+                            Introduction to Web Development
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <i class="fas fa-download"></i>
+
+                    <div>
+
+                        <h3>
+
+                            Resource Downloaded
+
+                        </h3>
+
+                        <p>
+
+                            HTML Cheat Sheet.pdf
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <i class="fas fa-bookmark"></i>
+
+                    <div>
+
+                        <h3>
+
+                            Lesson Bookmarked
+
+                        </h3>
+
+                        <p>
+
+                            HTML Elements & Structure
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= COMPLETED LESSONS ================= -->
+
+        <section class="completed-section">
+
+            <h2>
+
+                Completed Lessons
+
+            </h2>
+
+            <div class="completed-list">
+
+                <div class="completed-item">
+
+                    <i class="fas fa-check-circle"></i>
+
+                    <span>
+
+                        Lesson 1 - Introduction to Web Development
+
+                    </span>
+
+                </div>
+
+                <div class="completed-item">
+
+                    <i class="fas fa-check-circle"></i>
+
+                    <span>
+
+                        Lesson 2 - Installing VS Code
+
+                    </span>
+
+                </div>
+
+                <div class="completed-item">
+
+                    <i class="fas fa-check-circle"></i>
+
+                    <span>
+
+                        Lesson 3 - HTML Document Structure
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html">
+
+            <i class="fas fa-house"></i>
+
+            <span>Home</span>
+
+        </a>
+
+        <a href="classes.html">
+
+            <i class="fas fa-book-open"></i>
+
+            <span>Classes</span>
+
+        </a>
+
+        <a href="resources.html">
+
+            <i class="fas fa-folder-open"></i>
+
+            <span>Resources</span>
+
+        </a>
+
+        <a href="progress.html" class="active">
+
+            <i class="fas fa-chart-line"></i>
+
+            <span>Progress</span>
+
+        </a>
+
+    </nav>
+
+    <script src="progress.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1483 @@
+/* ==========================================
+   DIUXA TECH HUB
+   classes.css
+   Part 1
+==========================================*/
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+    display:flex;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   VARIABLES
+=========================== */
+
+:root{
+
+    --primary:#0057ff;
+    --secondary:#00c896;
+
+    --white:#ffffff;
+
+    --background:#f5f7fb;
+
+    --text:#1f2937;
+
+    --gray:#6b7280;
+
+    --light:#eef2ff;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#edf2f7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#003fc2;
+
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+
+    width:270px;
+
+    height:100vh;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    background:linear-gradient(180deg,#0057ff,#0039b5);
+
+    padding:30px 20px;
+
+    color:#fff;
+
+    overflow-y:auto;
+
+    z-index:1000;
+
+    box-shadow:5px 0 25px rgba(0,0,0,.08);
+
+}
+
+.logo-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:45px;
+
+}
+
+.logo-box img{
+
+    width:50px;
+
+}
+
+.logo-box h2{
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.sidebar nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.sidebar nav a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:15px 18px;
+
+    border-radius:14px;
+
+    transition:var(--transition);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.sidebar nav a i{
+
+    width:22px;
+
+    text-align:center;
+
+}
+
+.sidebar nav a:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateX(6px);
+
+}
+
+.sidebar nav .active{
+
+    background:#fff;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   MOBILE HEADER
+=========================== */
+
+.mobile-header{
+
+    display:none;
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+
+    margin-left:270px;
+
+    width:100%;
+
+    padding:40px;
+
+}
+
+/* ===========================
+   PAGE HEADER
+=========================== */
+
+.page-header{
+
+    margin-bottom:35px;
+
+}
+
+.page-header h1{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.page-header p{
+
+    color:var(--gray);
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#fff;
+
+    padding:18px 22px;
+
+    border-radius:16px;
+
+    margin-bottom:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.search-box i{
+
+    color:var(--primary);
+
+    font-size:18px;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    margin-left:15px;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font-size:15px;
+
+    color:#333;
+
+}
+
+/* ===========================
+   COURSE PROGRESS
+=========================== */
+
+.course-progress{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:40px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.progress-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.progress-top h3{
+
+    font-size:20px;
+
+}
+
+.progress-top span{
+
+    color:var(--gray);
+
+    font-weight:600;
+
+}
+
+.progress-bar{
+
+    height:12px;
+
+    background:#e5e7eb;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:linear-gradient(90deg,
+    var(--primary),
+    var(--secondary));
+
+}
+
+/* ===========================
+   MODULE
+=========================== */
+
+.module{
+
+    margin-bottom:55px;
+
+}
+
+.module-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.module-title i{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-radius:16px;
+
+    font-size:24px;
+
+}
+
+.module-title h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   LESSON GRID
+=========================== */
+
+.lesson-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+/* ===========================
+   PLACEHOLDER
+   (Lesson Card Styling
+   starts in Part 2)
+=========================== */
+
+
+
+/*==========================================
+    LESSON CARDS
+==========================================*/
+
+.lesson-card{
+
+    background:var(--white);
+
+    border-radius:22px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    border:2px solid transparent;
+
+}
+
+.lesson-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:6px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+.lesson-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+/*==========================================
+    LESSON HEADER
+==========================================*/
+
+.lesson-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.lesson-number{
+
+    background:var(--light);
+
+    color:var(--primary);
+
+    padding:8px 14px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.lesson-duration{
+
+    color:var(--gray);
+
+    font-size:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+/*==========================================
+    VIDEO ICON
+==========================================*/
+
+.lesson-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+    font-size:34px;
+
+    transition:.4s;
+
+}
+
+.lesson-card:hover .lesson-icon{
+
+    transform:scale(1.12) rotate(8deg);
+
+}
+
+/*==========================================
+    LESSON TITLE
+==========================================*/
+
+.lesson-card h3{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+    color:var(--text);
+
+}
+
+.lesson-card p{
+
+    text-align:center;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+    font-size:15px;
+
+}
+
+/*==========================================
+    WATCH BUTTON
+==========================================*/
+
+.lesson-card a{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.lesson-card a:hover{
+
+    background:#003fc2;
+
+    transform:scale(1.02);
+
+}
+
+/*==========================================
+    CURRENT LESSON
+==========================================*/
+
+.lesson-card.current{
+
+    border:2px solid var(--primary);
+
+}
+
+.lesson-card.current::after{
+
+    content:"Continue";
+
+    position:absolute;
+
+    top:18px;
+
+    right:-35px;
+
+    width:140px;
+
+    text-align:center;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:6px;
+
+    transform:rotate(45deg);
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/*==========================================
+    COMPLETED LESSON
+==========================================*/
+
+.lesson-card.completed{
+
+    border:2px solid var(--secondary);
+
+}
+
+.lesson-card.completed::after{
+
+    content:"Completed";
+
+    position:absolute;
+
+    top:18px;
+
+    right:-38px;
+
+    width:150px;
+
+    background:var(--secondary);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:6px;
+
+    transform:rotate(45deg);
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/*==========================================
+    LOCKED LESSON
+==========================================*/
+
+.lesson-card.locked{
+
+    opacity:.7;
+
+    filter:grayscale(.4);
+
+}
+
+.lesson-card.locked a{
+
+    background:#9ca3af;
+
+    pointer-events:none;
+
+}
+
+.lesson-card.locked::after{
+
+    content:"Locked";
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#555;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:"Font Awesome 6 Free";
+
+    font-weight:900;
+
+    content:"\f023";
+
+}
+
+/*==========================================
+    HOVER GLOW
+==========================================*/
+
+.lesson-card:hover{
+
+    border-color:rgba(0,87,255,.15);
+
+}
+
+/*==========================================
+    BUTTON ICON
+==========================================*/
+
+.lesson-card a i{
+
+    transition:.3s;
+
+}
+
+.lesson-card:hover a i{
+
+    transform:translateX(5px);
+
+}
+
+/*==========================================
+    FLOATING ANIMATION
+==========================================*/
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.lesson-icon{
+
+    animation:floating 4s infinite ease-in-out;
+
+}
+
+/*==========================================
+    FADE ANIMATION
+==========================================*/
+
+.lesson-card{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==========================================
+    SHIMMER EFFECT
+==========================================*/
+
+.lesson-card::before{
+
+    background-size:200% 100%;
+
+    animation:gradientMove 5s linear infinite;
+
+}
+
+@keyframes gradientMove{
+
+0%{
+
+background-position:0%;
+
+}
+
+100%{
+
+background-position:200%;
+
+}
+
+}
+
+/*==========================================
+    FOCUS STATE
+==========================================*/
+
+.lesson-card a:focus{
+
+outline:none;
+
+box-shadow:0 0 0 4px rgba(0,87,255,.2);
+
+}
+
+/*==========================================
+    END OF PART 2
+==========================================*/
+
+
+/*==========================================
+    BOTTOM NAVIGATION
+==========================================*/
+
+.bottom-nav{
+
+    display:none;
+
+}
+
+/*==========================================
+    OVERLAY
+==========================================*/
+
+.overlay{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:900;
+
+}
+
+.overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/*==========================================
+    RIPPLE EFFECT
+==========================================*/
+
+button,
+.lesson-card a{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ripple{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    background:rgba(255,255,255,.45);
+
+    animation:ripple .6s linear;
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:scale(4);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==========================================
+    TABLET
+==========================================*/
+
+@media(max-width:1100px){
+
+main{
+
+    padding:30px;
+
+}
+
+.lesson-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.page-header h1{
+
+    font-size:32px;
+
+}
+
+}
+
+/*==========================================
+    MOBILE
+==========================================*/
+
+@media(max-width:900px){
+
+.sidebar{
+
+    left:-280px;
+
+    transition:.35s;
+
+}
+
+.sidebar.show{
+
+    left:0;
+
+}
+
+.mobile-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    right:0;
+
+    height:70px;
+
+    padding:0 20px;
+
+    background:#fff;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    z-index:1001;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:42px;
+
+}
+
+.logo h2{
+
+    font-size:22px;
+
+}
+
+.menu-btn{
+
+    background:none;
+
+    border:none;
+
+    font-size:26px;
+
+    color:var(--primary);
+
+    cursor:pointer;
+
+}
+
+main{
+
+    margin-left:0;
+
+    padding:95px 20px 90px;
+
+}
+
+.page-header{
+
+    text-align:center;
+
+}
+
+.page-header h1{
+
+    font-size:28px;
+
+}
+
+.page-header p{
+
+    font-size:15px;
+
+}
+
+.search-box{
+
+    padding:15px;
+
+}
+
+.progress-top{
+
+    flex-direction:column;
+
+    gap:10px;
+
+    align-items:flex-start;
+
+}
+
+.lesson-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.lesson-card{
+
+    padding:22px;
+
+}
+
+.lesson-card h3{
+
+    font-size:20px;
+
+}
+
+.lesson-card p{
+
+    font-size:14px;
+
+}
+
+.module-title{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.module-title i{
+
+    width:55px;
+
+    height:55px;
+
+}
+
+.module-title h2{
+
+    font-size:22px;
+
+}
+
+.bottom-nav{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    right:0;
+
+    height:72px;
+
+    background:#fff;
+
+    box-shadow:0 -5px 20px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.bottom-nav a{
+
+    text-decoration:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:4px;
+
+    color:#666;
+
+    font-size:12px;
+
+    transition:.3s;
+
+}
+
+.bottom-nav a i{
+
+    font-size:20px;
+
+}
+
+.bottom-nav a.active{
+
+    color:var(--primary);
+
+}
+
+.bottom-nav a:hover{
+
+    color:var(--primary);
+
+}
+
+}
+
+/*==========================================
+    SMALL PHONES
+==========================================*/
+
+@media(max-width:500px){
+
+.page-header h1{
+
+    font-size:24px;
+
+}
+
+.page-header p{
+
+    font-size:14px;
+
+}
+
+.lesson-card{
+
+    padding:18px;
+
+}
+
+.lesson-icon{
+
+    width:70px;
+
+    height:70px;
+
+    font-size:28px;
+
+}
+
+.lesson-number{
+
+    font-size:12px;
+
+}
+
+.lesson-duration{
+
+    font-size:12px;
+
+}
+
+.lesson-card h3{
+
+    font-size:18px;
+
+}
+
+.lesson-card p{
+
+    font-size:13px;
+
+}
+
+.lesson-card a{
+
+    padding:12px;
+
+    font-size:14px;
+
+}
+
+.module-title h2{
+
+    font-size:20px;
+
+}
+
+}
+
+/*==========================================
+    LANDSCAPE PHONES
+==========================================*/
+
+@media(max-height:500px){
+
+.sidebar{
+
+    overflow-y:auto;
+
+}
+
+.mobile-header{
+
+    height:60px;
+
+}
+
+.bottom-nav{
+
+    height:60px;
+
+}
+
+}
+
+/*==========================================
+    UTILITY CLASSES
+==========================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.show{
+
+    display:block;
+
+}
+
+/*==========================================
+    IMAGE DEFAULTS
+==========================================*/
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/*==========================================
+    LINK TRANSITIONS
+==========================================*/
+
+a{
+
+    transition:.3s ease;
+
+}
+
+/*==========================================
+    DARK MODE READY
+==========================================*/
+
+body.dark{
+
+    background:#0f172a;
+
+    color:#fff;
+
+}
+
+body.dark .lesson-card,
+body.dark .course-progress,
+body.dark .search-box{
+
+    background:#1e293b;
+
+    color:#fff;
+
+}
+
+body.dark .lesson-card p,
+body.dark .progress-top span,
+body.dark .page-header p{
+
+    color:#cbd5e1;
+
+}
+
+body.dark input{
+
+    color:#fff;
+
+}
+
+body.dark .mobile-header,
+body.dark .bottom-nav{
+
+    background:#1e293b;
+
+}
+
+body.dark .bottom-nav a{
+
+    color:#cbd5e1;
+
+}
+
+body.dark .bottom-nav a.active{
+
+    color:var(--secondary);
+
+}
+
+/*==========================================
+    END OF FILE
+==========================================*/
