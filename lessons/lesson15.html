@@ -138,18 +138,13 @@
 
             <div class="video-container">
 
-                <video
-                    id="lessonVideo"
-                    controls
-                    preload="metadata">
-
-                    <source
-                        src="../videos/CSS Selectors Tutorial for Beginners - Dave Gray (1080p, h264).mp4"
-                        type="video/mp4">
-
-                    Your browser does not support HTML5 video.
-
-                </video>
+                <iframe
+                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                    title="CSS Simple Selectors - DIUXA Tech Hub"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
 
             </div>
 
@@ -369,9 +364,6 @@
 
         /* SAVE VIDEO POSITION */
 
-        const video =
-            document.getElementById("lessonVideo");
-
         if (video) {
 
             const savedTime =
@@ -382,15 +374,6 @@
                 if (savedTime) {
                     video.currentTime = Number(savedTime);
                 }
-
-            });
-
-            video.addEventListener("timeupdate", () => {
-
-                localStorage.setItem(
-                    "lesson15VideoTime",
-                    video.currentTime
-                );
 
             });
 
